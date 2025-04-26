@@ -33,6 +33,23 @@ exports.getVideos = async (req, res) => {
   }
 };
 
+exports.getVideo = async (req, res) => {
+  try {
+    const video = await Video.findById(req.params.videoId).lean();
+    if (!video) {
+      return res.status(404).json({ message: "Internal Server Error" });
+    }
+    if (video.likes.some((like) => like.likedBy === req.ipAddress)) {
+      res.status(200).json({ video: { ...video, liked: true } });
+      return;
+    }
+    res.status(200).json({ video });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+};
+
 exports.postLike = async (req, res) => {
   try {
     const { videoId } = req.params;
