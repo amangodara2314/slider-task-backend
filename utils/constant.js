@@ -1,0 +1,88 @@
+const SEED_DATA = [
+  {
+    title: "Video One",
+    description: "Description for video One",
+    src: "/1.mp4",
+    likes: [],
+    comments: [],
+  },
+  {
+    title: "Video Two",
+    description: "Description for video Two",
+    src: "/2.mp4",
+    likes: [],
+    comments: [],
+  },
+  {
+    title: "Video Three",
+    description: "Description for video Three",
+    src: "/3.mp4",
+    likes: [],
+    comments: [],
+  },
+  {
+    title: "Video Four",
+    description: "Description for video Four",
+    src: "/4.mp4",
+    likes: [],
+    comments: [],
+  },
+  {
+    title: "Video Five",
+    description: "Description for video Five",
+    src: "/5.mp4",
+    likes: [],
+    comments: [],
+  },
+  {
+    title: "Video Six",
+    description: "Description for video Six",
+    src: "/6.mp4",
+    likes: [],
+    comments: [],
+  },
+  {
+    title: "Video Seven",
+    description: "Description for video Seven",
+    src: "/7.mp4",
+    likes: [],
+    comments: [],
+  },
+  {
+    title: "Video Eight",
+    description: "Description for video Eight",
+    src: "/8.mp4",
+    likes: [],
+    comments: [],
+  },
+  {
+    title: "Video Nine",
+    description: "Description for video Nine",
+    src: "/9.mp4",
+    likes: [],
+    comments: [],
+  },
+  {
+    title: "Video Ten",
+    description: "Description for video Ten",
+    src: "/10.mp4",
+    likes: [],
+    comments: [],
+  },
+  {
+    title: "Video Eleven",
+    description: "Description for video Eleven",
+    src: "/11.mp4",
+    likes: [],
+    comments: [],
+  },
+  {
+    title: "Video Twelve",
+    description: "Description for video Twelve",
+    src: "/12.mp4",
+    likes: [],
+    comments: [],
+  },
+];
+
+module.exports = { SEED_DATA };
